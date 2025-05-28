@@ -4,7 +4,7 @@ import tailwindcss from '@astrojs/tailwind';
 
 // https://astro.build/config
 export default defineConfig({
-  base: "/LandingTest/",
+  base: "/landing-page/",
   vite: {
     plugins: [tailwindcss()]
   }
