@@ -1,6 +1,8 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Header from '../components/Header.astro';
+import { Image } from 'astro:assets';
+import foto from '../assets/foto.jpeg';
 
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
@@ -32,7 +34,7 @@ import Header from '../components/Header.astro';
 					
 					<div class="md:col-span-1 order-1 md:order-2 mb-8 md:mb-0">
 						<div class="flex h-58 w-58 items-center justify-center rounded-full bg-slate-100">
-							<img src="landing-page/src/assets/foto.jpeg" alt="Profile photo" class="h-58 w-58 rounded-full object-cover" />
+							<Image src={foto} alt="Profile photo" class="h-58 w-58 rounded-full object-cover" />
 						</div>
 					</div>
 				</div>
@@ -447,7 +449,7 @@ import Header from '../components/Header.astro';
 				</div>
 				
 				<div class="mt-12 flex justify-center">
-					<a href="src/assets/CV.pdf" download class="inline-flex items-center px-5 py-2.5 bg-gray-900 text-white rounded-md hover:bg-gray-800 transition">
+					<a href="/landing-page/CV.pdf" download class="inline-flex items-center px-5 py-2.5 bg-gray-900 text-white rounded-md hover:bg-gray-800 transition">
 					  Download CV
 					  <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
 						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
