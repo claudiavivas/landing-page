@@ -32,12 +32,12 @@ const {
 
 <style is:global>
 	:root {
-		--primary-purple: #8b5cf6;
-		--primary-indigo: #6366f1;
-		--primary-pink: #ec4899;
-		--accent-violet: #7c3aed;
-		--accent-indigo: #4f46e5;
-		--accent-pink: #db2777;
+		--primary-navy: #1a365d;
+		--primary-slate: #334155;
+		--primary-gray: #475569;
+		--accent-navy: #0f172a;
+		--accent-slate: #1e293b;
+		--accent-gray: #334155;
 	}
 	
 	html,
@@ -69,12 +69,12 @@ const {
 		left: 0;
 		width: 60px;
 		height: 4px;
-		background-color: var(--accent-color);
+		background-color: var(--accent-navy);
 		border-radius: 2px;
 	}
 
 	.gradient-bg {
-		background: linear-gradient(120deg, #8b5cf6, #4f46e5);
+		background: linear-gradient(120deg, var(--primary-navy), var(--primary-slate));
 	}
 
 	.highlight-card {
@@ -87,7 +87,7 @@ const {
 	}
 
 	.accent-border-left {
-		border-left: 4px solid var(--accent-color);
+		border-left: 4px solid var(--accent-navy);
 	}
 
 	@keyframes gradient-shift {
@@ -103,7 +103,7 @@ const {
 	}
 	
 	.gradient-text {
-		background: linear-gradient(90deg, var(--primary-purple), var(--primary-indigo), var(--primary-pink));
+		background: linear-gradient(90deg, var(--primary-navy), var(--primary-slate), var(--primary-gray));
 		background-size: 200% auto;
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
